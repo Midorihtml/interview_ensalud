@@ -20,8 +20,10 @@ Guillermo Fernández
 <a href='https://ensalud.bemy.com.ar' target="_blank">ensalud.bemy.com.ar</a>
 
 ### Scheme database
+<p>
   <img align='left' alt='scheme_files' src='./screenshots/scheme_files.png' width='50%'>
   <img align='right' alt='schemes_users' src='./screenshots/scheme_users.png' width='50%'>
+</p>
 
 ### Capturas de proyecto
 
