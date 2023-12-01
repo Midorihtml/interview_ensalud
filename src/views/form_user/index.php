@@ -73,21 +73,32 @@
                 <input type="text" name="company_bs" class="form-control" placeholder="Google">
             </label>
         </fieldset>
-        <div class='col-lg-6 mb-3'>
+        <div class='col-lg-6 d-md-flex justify-content-between mb-3'>
           <label class= "form-label" for="">Avatar
               <input  class="form-control col"  type="file" name="avatar" id="avatar" accept="image/jpeg">
           </label>
           <div class='avatar__wrapper'>
-              <?php 
-                  if(isset(($this->d)['avatar']['file'])){
-                      echo "<img class='avatar' src=" . $_SERVER['HTTP_REFERER'] . "filestore/img/" . ($this->d)['avatar']['file'] . " alt='avatar'>";
-                  };
-              ;?>
+              <?php if(isset(($this->d)['avatar']['file']) && ($this->d)['avatar']['file'] !== ''){ ?>
+                  <img class='avatar' src="<?php echo $_SERVER['HTTP_REFERER'] . 'filestore/img/' . ($this->d)['avatar']['file'];?>" alt='avatar'>
+              <?php }else{ ?>
+                <img class='avatar d-none' src="" alt='avatar'>
+              <?php };?>
           </div>
         </div>
-        <label class="form-label col-lg-6 mb-3" for="">C.V
+        <div class='col-lg-6 d-md-flex justify-content-between mb-3'>
+          <label class="form-label col-lg-6 mb-3" for="">C.V
             <input  class="form-control" type="file" name="cv" id="cv" accept="application/pdf">
-        </label>
+          </label>
+
+          <div class='avatar__wrapper text-end'>
+              <?php if(isset(($this->d)['cv']['file']) && ($this->d)['cv']['file'] !== '' ){ ?>
+                  <a href="<?php echo $_SERVER['HTTP_REFERER'] . "filestore/pdf/" . ($this->d)['cv']['file'] ;?>" target="_blank" rel="noopener noreferrer">
+                    <img class="avatar" src="<?php echo $_SERVER['HTTP_REFERER'] . '/src/assets/icons/file-pdf-regular.svg' ;?>" alt='avatar'>
+                  </a>
+              <?php };?>
+          </div>
+        </div>
+          
         <div class="text-end mt-4">
           <button id='' class="btn btn-primary col-3" value=>Save</button>
         </div>

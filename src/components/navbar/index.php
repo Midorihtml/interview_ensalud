@@ -8,8 +8,8 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="/">Home</a>
-          <a class="nav-link" href="q&a">Q&A</a>
-          <a href="">Github</a>
+          <a class="nav-link" href="http://<?php echo $_SERVER['HTTP_HOST'] ;?>/q&a">Q&A</a>
+          <a class="nav-link" target="_blank" href="https://github.com/Midorihtml/interview_ensalud">Github</a>
         </div>
       </div>
     </div>

@@ -56,14 +56,30 @@ const onSubmit = async (evento) => {
     const user = new User();
     const user_id = get_param_id();
     const data = new FormData(evento.target);
+    if (!data.get('avatar').name) data.delete('avatar');
+    if (!data.get('cv').name) data.delete('cv');
+
     const response = await user.post(`/user/${user_id}`, data);
 
     if (response.status !== 200) {
         return render_toast('error', '¡Error!');
     }
-    avatar.src = config.HOST + '/filestore/img/' + response.avatar_url;
-    render_toast('success', '¡success!')
+
+    if (response.avatar_url) {
+        avatar.src = config.HOST + '/filestore/img/' + response.avatar_url;
+        avatar.classList.remove('d-none');
+    };
+    render_toast('success', '¡success!');
 }
+
+const avatar_error_handler = (evento) => {
+    const input = evento.target;
+    const size = input.files[0]?.size / 1024 / 1024;
+    if (size > 3) {
+        render_toast('error', 'file size must be minor than 3mb');
+        input.value = '';
+    }
+};
 
 window.addEventListener('load', async () => {
     const form = document.querySelector('form');
@@ -78,4 +94,8 @@ window.addEventListener('load', async () => {
     const user_adapted = user_data_adapter(user_data);
 
     autofill_form(inputs, user_adapted);
+
+    const [input_avatar] = document.getElementsByName('avatar');
+
+    input_avatar.addEventListener('change', avatar_error_handler);
 });
