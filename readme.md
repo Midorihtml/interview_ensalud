@@ -21,7 +21,6 @@ Guillermo Fernández
   ensalud.bemy.com.ar
   </a>
 
-
 ### Capturas de proyecto
 
 <p align='center'>
