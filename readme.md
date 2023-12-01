@@ -16,10 +16,12 @@ Guillermo Fernández
 - Actualización de datos sin recarga de pagina
 - Toast de notificación de success / error
 
-  ### Link Demo
-  <a href='https://ensalud.bemy.com.ar' target="_blank">
-  ensalud.bemy.com.ar
-  </a>
+### Link Demo
+<a href='https://ensalud.bemy.com.ar' target="_blank">ensalud.bemy.com.ar</a>
+
+### Scheme database
+  <img align='left' alt='scheme_files' src='./screenshots/scheme_files.png' width='50%'>
+  <img align='right' alt='schemes_users' src='./screenshots/schemes_users.png' width='50%'>
 
 ### Capturas de proyecto
 
