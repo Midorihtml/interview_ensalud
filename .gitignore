@@ -1,0 +1,6 @@
+vendor/
+.vscode/
+filestore/
+.env
+composer.lock
+php-error.log

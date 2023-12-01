@@ -1,0 +1,48 @@
+.form_user {
+    position: relative;
+    min-height: 100vh;
+
+    .toast {
+        position: absolute !important;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .success {
+        background-color: rgb(177, 246, 177);
+    }
+
+    .error {
+        background-color: rgb(246, 177, 177);
+    }
+}
+
+@media(width >=992px) {
+    .form_user {
+        position: relative;
+        min-height: 100vh;
+
+
+        .toast {
+            position: absolute !important;
+            right: 0;
+            bottom: 0;
+        }
+
+        .success {
+            background-color: rgb(177, 246, 177);
+        }
+
+        .error {
+            background-color: rgb(246, 177, 177);
+        }
+    }
+}
+
+.avatar {
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}

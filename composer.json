@@ -1,0 +1,20 @@
+{
+    "name": "gaf/ensalud_interview",
+    "description": "Entrevista Ensalud",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Guillermo Fernández"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "bramus/router": "~1.6",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
