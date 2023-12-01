@@ -65,6 +65,46 @@
                 </div>
                 </div>
             </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Clase usada para el modelo User
+                </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                   <code>
+                    <?php highlight_file($GLOBALS['src'] . 'models/User.php');?>
+                   </code>
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Instalación dependencia php-kint/kint
+                </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse <?php echo (isset($_GET['click']) ? 'show' : '');?>" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    command:
+                   <code>
+                        composer require kint-php/kint --dev
+                   </code>
+                   <p class='mt-3'>
+                       <a href="?click=true" class='btn btn-primary'>Ejecutar dependencia</a>
+                   </p>
+                   <p class='kint'>
+                    <?php 
+                        use Src\models\User;
+                        if((isset($_GET['click']))){
+                            User::kint();  
+                        }
+                    ;?>
+                   </p>
+                </div>
+                </div>
+            </div>
         </div>
     </div>
 </main>

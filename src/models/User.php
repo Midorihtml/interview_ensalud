@@ -7,6 +7,7 @@ use Src\lib\Response;
 use Src\models\File;
 use PDO;
 use PDOException;
+use kint;
 
 class User{
 
@@ -168,4 +169,9 @@ class User{
         $file->save();
         return $file;
     }
+
+    public static function kint(){
+        $msg = '¡Hola! Valor mostrado con Kint';
+        return d($msg);
+    } 
 }
