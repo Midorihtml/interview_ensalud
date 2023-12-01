@@ -1,6 +1,8 @@
 # Entrevista Técnica Ensalud
 
-## Guillermo Fernández
+```sh
+Guillermo Fernández
+```
 
 ### Capturas de proyecto
 
