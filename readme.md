@@ -21,16 +21,16 @@ Guillermo Fernández
 
 ### Scheme database
   <img align='left' alt='scheme_files' src='./screenshots/scheme_files.png' width='50%'>
-  <img align='right' alt='schemes_users' src='./screenshots/schemes_users.png' width='50%'>
+  <img align='right' alt='schemes_users' src='./screenshots/scheme_users.png' width='50%'>
 
 ### Capturas de proyecto
 
 <p align='center'>
-  <img alt='navbar desktop' src='./screenshots/navbar_desktop.png' width='100%'>
-  <img alt='navbar mobile' src='./screenshots/navbar_mobile.png' width='100%'>
-  <img alt='user list' src='./screenshots/user_list.png' width='100%'>
-  <img alt='user post' src='./screenshots/user_post.png' width='100%'>
-  <img alt='comments' src='./screenshots/comments.png' width='100%'>    
-  <img alt='user edit' src='./screenshots/user_edit.png' width='100%'>
-  <img alt='toast' src='./screenshots/toast.png' width='100%'>
+  <img alt='navbar desktop' src='./screenshots/navbar_desktop.png' width='50%'>
+  <img alt='navbar mobile' src='./screenshots/navbar_mobile.png' width='50%'>
+  <img alt='user list' src='./screenshots/user_list.png' width='50%'>
+  <img alt='user post' src='./screenshots/user_post.png' width='50%'>
+  <img alt='comments' src='./screenshots/comments.png' width='50%'>    
+  <img alt='user edit' src='./screenshots/user_edit.png' width='50%'>
+  <img alt='toast' src='./screenshots/toast.png' width='50%'>
 </p>
